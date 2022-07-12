@@ -109,3 +109,9 @@ button:focus {
 .input-div {
 	margin: 1rem;
 }
+
+.img-center-fit {
+	justify-content: center;
+	max-width: 100%;
+	margin: auto;
+}

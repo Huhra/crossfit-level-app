@@ -39,7 +39,6 @@
 </div>
 
 <div class="flex-container-columns">
-
 	{#each requisite as r}
 	<FitColumn requisites={r.requisites}
 		neededRequisite={r.needed}
@@ -47,4 +46,13 @@
 		bodyWeight={bodyWeight}
 		isWoman={isWoman}/>
 	{/each}
+ </div>
+
+
+
+ <img class="img-center-fit text-center"
+ alt="CrossfitVallewView"
+ src="http://www.crossfitvalleyview.com/wp-content/uploads/2019/05/Ranking-190513.jpg" />
+ <div class="text-center">
+	<b>Source des tests</b>
  </div>
