@@ -65,7 +65,7 @@ button:focus {
 .flex-container-columns {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: normal;
 	align-content: normal;
@@ -78,6 +78,8 @@ button:focus {
 	flex-basis: auto;
 	align-self: auto;
 	order: 0;
+	border: 1px solid black;
+	margin: 5px;
 }
   
 .flex-items-row {
@@ -87,5 +89,23 @@ button:focus {
 	justify-content: flex-start;
 	align-items: normal;
 	align-content: normal;
+	height: 2rem;
+	margin: 0.2rem;
+	user-select: none;
 }
 
+.text-center {
+	text-align: center;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.text-line-through {
+	text-decoration: line-through;
+}
+
+.input-div {
+	margin: 1rem;
+}
