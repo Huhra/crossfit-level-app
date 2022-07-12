@@ -18,6 +18,15 @@
 	function toggleWeight() {
 		weightChanged = true;
 	}
+
+	function lbsToKg(lbs) {
+		return Math.round(lbs / 2.205) + 'kg';
+	}
+	function toKg(lbsMan, lbsWoman, isWoman) {
+		if (isWoman)
+			return lbsToKg(lbsWoman);
+		return lbsToKg(lbsMan);
+	}
 </script>
 
 <div class="text-center input-div">
@@ -48,7 +57,58 @@
 	{/each}
  </div>
 
+ <div class="text-center">
+	<h3>List of tests</h3>
+ </div>
 
+ <div class="flex-container-columns">
+	<div class="flex-items-column">
+		<div class="text-center">
+			<b>Jackie</b>
+		</div>
+		For time:<br/>
+		1000m row<br/>
+		50 thrusters à {toKg(45, 35, isWoman)}<br/>
+		30 pull-ups
+	</div>
+	<div class="flex-items-column">
+		<div class="text-center">
+			<b>Randy</b>
+		</div>
+		For time:<br/>
+		75 power snatches à {toKg(75, 55, isWoman)}
+	</div>
+	<div class="flex-items-column">
+		<div class="text-center">
+			<b>Fran</b>
+		</div>
+		21-15-9 reps for time:<br/>
+		Thrusters à {toKg(95, 65, isWoman)}<br/>
+		Pull-ups
+	</div>
+	<div class="flex-items-column">
+		<div class="text-center">
+			<b>Grace</b>
+		</div>
+		For time:<br/>
+		30 clean & jerk à {toKg(135, 95, isWoman)}
+	</div>
+	<div class="flex-items-column">
+		<div class="text-center">
+			<b>Isabel</b>
+		</div>
+		For time:<br/>
+		30 snatches à {toKg(135, 95, isWoman)}
+	</div>
+	<div class="flex-items-column">
+		<div class="text-center">
+			<b>Amanda</b>
+		</div>
+		9-7-5 reps for time:<br/>
+		Muscle-ups<br/>
+		Squat snatches à {toKg(135, 95, isWoman)}
+	</div>
+</div>
 
  <img class="img-center-fit text-center"
  alt="CrossfitVallewView"
